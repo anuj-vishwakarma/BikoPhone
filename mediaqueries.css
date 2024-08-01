@@ -1,1 +1,231 @@
-dfd
+/* Media Queries */
+
+/* Mobile Devices (Portrait and Landscape) */
+@media (max-width: 767px) {
+    #nav {
+        padding-left: 5px;
+        height: 15%;
+        font-size: 0.8vw;
+    }
+
+    #nav h4 {
+        margin-left: 0;
+        padding: 5px;
+    }
+
+    #login-register {
+        flex-direction: column;
+        width: 80vw;
+        height: auto;
+    }
+
+    #login-register #register,
+    #login-register #login {
+        width: 80%;
+        font-size: 1.5vw;
+    }
+
+    #page1 h1 {
+        font-size: 60px;
+    }
+
+    #page1 h2 {
+        font-size: 24px;
+    }
+
+    #page1 p {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    #arrow {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    #buttons {
+        flex-direction: column;
+        font-size: 1.5vh;
+    }
+
+    #why-zescoot h1,
+    #abover-cards-container .header {
+        font-size: 5vh;
+    }
+
+    #div1,
+    #div2 {
+        font-size: 1.2vw;
+        flex-direction: column;
+    }
+
+    #div1 #why-zescoot-div1,
+    #div1 #why-zescoot-div2,
+    #div2 #why-zescoot-div1,
+    #div2 #why-zescoot-div2 {
+        width: 90vw;
+    }
+
+    #page3 {
+        height: auto;
+        font-size: 3vh;
+        margin-top: 20px;
+    }
+
+    #page3>p {
+        font-size: 2vh;
+    }
+
+    .elements {
+        width: 40%;
+        height: 30%;
+    }
+
+    .elements h2 {
+        font-size: 2.5vh;
+    }
+
+    #page4 h1 {
+        font-size: 6vh;
+    }
+
+    .footer-divs1,
+    .footer-divs2,
+    .footer-divs4 {
+        margin: 0;
+    }
+
+    .footer-divs1 #bmw-img,
+    .footer-divs4>p {
+        width: 100%;
+    }
+
+    .page14-inner {
+        padding: 0 2vw;
+        font-size: 2.5vw;
+    }
+
+    .page14-inner>i {
+        font-size: 1.5vw;
+    }
+
+    .page14-inner>h1 {
+        font-size: 2.5vw;
+    }
+}
+
+/* Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #nav {
+        padding-left: 8px;
+        height: 17%;
+        font-size: 1vw;
+    }
+
+    #nav h4 {
+        margin-left: -1vh;
+        padding: 7px;
+    }
+
+    #login-register {
+        width: 60vw;
+    }
+
+    #login-register #register,
+    #login-register #login {
+        width: 12vw;
+        font-size: 1.8vw;
+    }
+
+    #page1 h1 {
+        font-size: 80px;
+    }
+
+    #page1 h2 {
+        font-size: 28px;
+    }
+
+    #page1 p {
+        width: 60%;
+        font-size: 20px;
+    }
+
+    #arrow {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    #buttons {
+        flex-direction: row;
+        font-size: 2vh;
+    }
+
+    #why-zescoot h1,
+    #abover-cards-container .header {
+        font-size: 6vh;
+    }
+
+    #div1,
+    #div2 {
+        font-size: 1.4vw;
+    }
+
+    #div1 #why-zescoot-div1,
+    #div1 #why-zescoot-div2,
+    #div2 #why-zescoot-div1,
+    #div2 #why-zescoot-div2 {
+        width: 75vw;
+    }
+
+    #page3 {
+        height: 60vh;
+        font-size: 3.5vh;
+    }
+
+    #page3>p {
+        font-size: 2.5vh;
+    }
+
+    .elements {
+        width: 30%;
+        height: 40%;
+    }
+
+    .elements h2 {
+        font-size: 3vh;
+    }
+
+    #page4 h1 {
+        font-size: 8vh;
+    }
+
+    .footer-divs1 {
+        margin-left: 2%;
+    }
+
+    .footer-divs2 {
+        margin-left: -20%;
+    }
+
+    .footer-divs4 {
+        margin-right: 2%;
+    }
+
+    .page14-inner {
+        padding: 0 4vw;
+        font-size: 2.8vw;
+    }
+
+    .page14-inner>i {
+        font-size: 1.8vw;
+    }
+
+    .page14-inner>h1 {
+        font-size: 3vw;
+    }
+}
+
+/* Desktops (Landscape and larger screens) */
+@media (min-width: 1025px) {
+    /* No specific styles needed for desktops; the default styles apply */
+}
