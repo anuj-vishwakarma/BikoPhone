@@ -21,9 +21,11 @@
 }
 html,
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
 }
+
 *::selection {
   background-color: #ccb100;
   color: black;
@@ -61,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 #nav {
   /* background-color: red; */
   position: fixed;
-  /* height: 145px; */
+  height: 4vmax;
   height: 18%;
   /* width: 100%; */
   width: 100vw;
@@ -78,11 +80,15 @@ body::-webkit-scrollbar-thumb {
 #nav h4 {
   font-size: 1.2vw;
   /* color: black;     */
-  margin-left: -2vh; /* changed*/
+  margin-left: -2vw; /* changed*/
   padding: 10px;
   text-transform: uppercase;
   font-weight: 500;
   /* width: 10px; */
+}
+
+#nav h4:hover {
+  cursor: pointer;
 }
 .nav-top .ab-us {
   width: 20vh;
@@ -90,6 +96,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #nav h2:hover {
+  cursor: pointer;
   background-color: #ccb100;
 }
 .nav-top h2 {
@@ -105,8 +112,12 @@ body::-webkit-scrollbar-thumb {
 #nav #logo-main {
   margin-left: 10vh;
   position: relative;
-  height: 13vh;
+  height: 10vh;
   /* margin-right:    %; */
+}
+
+#nav #logo-main:hover {
+  cursor: pointer;
 }
 
 #nav #login-register {
@@ -148,6 +159,21 @@ body::-webkit-scrollbar-thumb {
   /* color: green; */
   font-size: 1.2vw;
 }
+
+#login-register #register:hover {
+  cursor: pointer;
+  scale: 0.9;
+  background-color: black;
+  color: #f0d529;
+}
+#login-register #login:hover {
+  scale: 0.9;
+  background-color: #f0d529;
+  color: black;
+  cursor: pointer;
+  scale: 0.9;
+}
+
 #main {
   position: relative;
   background-color: rgba(0, 0, 0, 0.689);
@@ -197,9 +223,24 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   font-size: 20px;
 }
-#page1 #arrow {
-  height: 28vh;
-  width: 15vw;
+#page1 #arrow-container {
+  height: 15.5vw;
+  width: 15.5vw;
+  /* background-color: red; */
+  border: 2px solid;
+  position: absolute;
+  display: flex;
+  left: -2.5%;
+  bottom: -0.5%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+  border: none;
+}
+#page1 #arrow-container #arrow {
+  height: 15.5vw;
+  width: 15.5vw;
   background-color: transparent;
   border: 2px solid;
   position: absolute;
@@ -217,10 +258,20 @@ body::-webkit-scrollbar-thumb {
   font-weight: 100;
 }
 #page1 #arrow:hover {
-  scale: 0.4;
+  border-color: black;
+  cursor: pointer;
+}
+
+#page1 #arrow-container:hover {
+  border-color: black;
+  cursor: pointer;
+}
+
+/* #page1 #arrow:hover { */
+/* scale: 0.4;
   background-color: #ccb100;
   border: 1px solid black;
-}
+} */
 #page1 .slogan {
   font-size: 7vh;
 }
@@ -239,11 +290,13 @@ body::-webkit-scrollbar-thumb {
 #buttons h2 {
   background-color: #ccb100;
   color: black;
-  padding: 10px 15px;
+  padding: 10px 20px 10px 20px;
   border-radius: 50px;
   transition: all ease 0.5s;
 }
 #buttons h2:hover {
+  scale: 0.9;
+  cursor: pointer;
   background-color: black;
   color: #ccb100;
 }
@@ -346,7 +399,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 #why-zescoot #div2 h4,
+#why-zescoot #div1 h4,
 #why-zescoot #div2 p {
+  font-size: 1.5vmax;
   color: black;
 }
 #why-zescoot #div2 p {
@@ -424,13 +479,16 @@ body::-webkit-scrollbar-thumb {
   object-fit: cover;
 }
 #about-us-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
   text-align: center;
 }
 #about-us p {
   font-size: 1.6vh;
   margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 70%;
   /* line-height: ; */
 }
 #about-us h3 {
@@ -595,6 +653,7 @@ p {
   overflow: hidden;
   border-radius: 20px;
   position: relative;
+  text-align: center;
 }
 .elements h2 {
   position: absolute;
@@ -625,13 +684,14 @@ p {
   scale: 1;
 }
 #page4 h1 {
-  font-size: 9vh;
+  font-size: 4.4vw;
   position: absolute;
   top: 10%;
   font-weight: 900;
   color: black;
   font-family: "Gilroy", sans-serif;
   -webkit-text-stroke: 2px white;
+  text-align: center;
   z-index: 9;
 }
 #page4 #hOne:hover {
@@ -743,6 +803,7 @@ p {
   color: black;
 }
 .page14-inner h1:hover {
+  cursor: pointer;
   font-weight: 500;
   color: black;
 }
